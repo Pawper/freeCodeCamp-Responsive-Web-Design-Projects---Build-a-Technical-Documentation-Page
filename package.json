@@ -1,0 +1,22 @@
+{
+  "name": "freecodecamp-responsive-web-design-projects---build-a-technical-documentation-page",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Pawper/freeCodeCamp-Responsive-Web-Design-Projects---Build-a-Technical-Documentation-Page.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Pawper/freeCodeCamp-Responsive-Web-Design-Projects---Build-a-Technical-Documentation-Page/issues"
+  },
+  "homepage": "https://github.com/Pawper/freeCodeCamp-Responsive-Web-Design-Projects---Build-a-Technical-Documentation-Page#readme",
+  "devDependencies": {
+    "node-sass": "^4.14.1"
+  }
+}
