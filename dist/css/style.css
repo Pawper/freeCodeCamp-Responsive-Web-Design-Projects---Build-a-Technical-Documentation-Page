@@ -1,0 +1,101 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+  font-family: 'Open Sans', Arial, sans-serif; }
+  html *,
+  html *::before,
+  html *::after {
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0; }
+  html body {
+    max-width: 100vw;
+    font-size: 1.6rem;
+    color: #4d4e53;
+    line-height: 1.5;
+    display: grid;
+    grid-template-columns: max-content 1fr;
+    grid-template-areas: "navbar content"; }
+    @media only screen and (max-width: 50em) {
+      html body {
+        display: flex;
+        flex-direction: column; } }
+    html body header {
+      font-size: 2.88rem;
+      color: black; }
+    html body #navbar {
+      height: 100%;
+      grid-area: navbar;
+      position: fixed;
+      border-right: solid;
+      border-color: rgba(0, 22, 22, 0.4); }
+      @media only screen and (max-width: 50em) {
+        html body #navbar {
+          position: unset;
+          height: unset; } }
+      html body #navbar header {
+        padding: 1rem;
+        text-align: center; }
+      html body #navbar ul {
+        height: 90%;
+        list-style: none;
+        overflow-y: auto;
+        overflow-x: hidden; }
+        @media only screen and (max-width: 50em) {
+          html body #navbar ul {
+            height: 20rem;
+            border: 1px solid; } }
+        html body #navbar ul li {
+          border-top: 1px solid; }
+          @media only screen and (max-width: 50em) {
+            html body #navbar ul li {
+              margin: 0; } }
+          html body #navbar ul li a {
+            display: block;
+            padding: 1rem 3rem;
+            text-decoration: none;
+            cursor: pointer;
+            color: #4d4e53;
+            position: relative; }
+            html body #navbar ul li a:hover {
+              background-color: #eee;
+              color: black; }
+              html body #navbar ul li a:hover::before {
+                content: '';
+                height: 100%;
+                width: 5px;
+                background-color: black;
+                z-index: 1;
+                position: absolute;
+                top: 0;
+                left: 0; }
+    html body #main-doc {
+      max-width: calc(100vw - 31.5rem);
+      grid-area: content;
+      padding: 2rem;
+      margin-left: 30rem;
+      overflow-x: hidden; }
+      @media only screen and (max-width: 50em) {
+        html body #main-doc {
+          margin-left: 0;
+          max-width: 100vw; } }
+      html body #main-doc article {
+        margin: 1.5rem;
+        font-size: 1.5rem; }
+        html body #main-doc article p, html body #main-doc article ul, html body #main-doc article li {
+          margin: 1.5rem 0; }
+        html body #main-doc article ul {
+          padding-left: 4rem; }
+          html body #main-doc article ul li {
+            margin-left: 2rem; }
+        html body #main-doc article code {
+          display: block;
+          white-space: pre;
+          word-break: normal;
+          word-wrap: normal;
+          line-height: 2;
+          background-color: #f7f7f7;
+          padding: 1.5rem;
+          margin: 1rem;
+          border-radius: .5rem; }
